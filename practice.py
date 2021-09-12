@@ -40,7 +40,7 @@ def Gym_Bot():
         message.attach(MIMEText(result6 + ","))
         message.attach(MIMEText(result7 + ","))
         message.attach(MIMEText(result8 + "."))
-        message.attach(MIMEImage(Path("gym pic.jpg").read_bytes()))
+        message.attach(MIMEImage(Path("gym_pic.png").read_bytes()))
         with smtplib.SMTP(host="smtp.gmail.com", port=587) as smtp:
             smtp.ehlo()
             smtp.starttls()
